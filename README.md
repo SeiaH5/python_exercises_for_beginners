@@ -85,7 +85,7 @@ ________________________________________________________________________________
 Example:
 
 ```
-Input:         Juan Dela Cruz
+Input: Juan Dela Cruz
 Output: Juan Dela Cruz
 ```
 

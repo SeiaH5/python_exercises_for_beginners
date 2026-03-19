@@ -1,8 +1,8 @@
-try:
-    numbers = []
-    while True:
+numbers = []
+while True:
+    try:
         num = int(input("Enter a number: "))
         numbers.append(num)
-except ValueError:
-    print(min(numbers))
-
+    except ValueError:
+        break
+print(*sorted(numbers))

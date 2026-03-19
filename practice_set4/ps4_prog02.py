@@ -1,6 +1,9 @@
 numbers = []
-for i in range(10):
-    num = int(input("Enter a number: "))
-    numbers.append(num)
-for item in (set(numbers)):
-    print(item)
+while True:
+    try:
+        num = int(input("Enter a number: "))
+        if num not in numbers:
+            numbers.append(num)
+    except ValueError:
+        break
+print(*numbers)

@@ -1,7 +1,8 @@
-try:
-    numbers = []
-    while True:
+numbers = []
+while True:
+    try:
         num = int(input("Enter a number: "))
         numbers.append(num)
-except ValueError:
-    print(*sorted(numbers))
+    except ValueError:
+        break
+print(sum(numbers)/len(numbers))
